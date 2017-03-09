@@ -1,0 +1,22 @@
+section {
+  line-height: 1.58;
+  font-size: 18px;
+}
+
+.section--first {
+  hr.section-divider {
+    display: none;
+  }
+}
+
+hr.section-divider {
+  margin: 52px auto 42px;
+  box-sizing: content-box;
+  text-align: center
+
+  &:before {
+    content: '...';
+    color: rgba(0,0,0,0.6);
+    display: inline-block;
+  }
+}
