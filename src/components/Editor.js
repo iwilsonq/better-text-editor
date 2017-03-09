@@ -8,10 +8,13 @@ const content = [
 ];
 
 class Editor extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   renderSections() {
     let newContent = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 2; i++) {
       newContent.push(content);
     }
 
@@ -26,7 +29,7 @@ class Editor extends Component {
 
   render() {
     return (
-      <div className="editor">
+      <div className="editor" contentEditable>
         {this.renderSections()}
       </div>
     );

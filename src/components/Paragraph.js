@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 const Paragraph = ({ text, className }) => {
   return (
-    <p className={"graf " + className}>
+    <p className={className ? `graf ${className}` : 'graf'}>
       {text}
     </p>
   );

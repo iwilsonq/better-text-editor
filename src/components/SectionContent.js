@@ -9,7 +9,7 @@ const SectionContent = ({ children }) => {
 };
 
 SectionContent.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.array
 };
 
 export default SectionContent;
